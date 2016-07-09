@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
         if(savedInstanceState==null){
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            RuntimePermissionsFragment fragment = new RuntimePermissionsFragment();
+            CameraPreviewFragment fragment = new CameraPreviewFragment();
+//            RuntimePermissionsFragment fragment = new RuntimePermissionsFragment();
             transaction.replace(R.id.camera_fragment, fragment);
             transaction.commit();
         }

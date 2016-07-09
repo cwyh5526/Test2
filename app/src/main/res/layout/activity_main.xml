@@ -12,8 +12,36 @@
 
     <FrameLayout
         android:id="@+id/camera_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         android:layout_weight="2"/>
+
+
+    <EditText
+        android:id="@+id/edit_measuring_value"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:/>
+
+    <Spinner
+        android:id="@+id/sipnner_measuring_unit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:spinnerMode="dropdown"
+        />
+
+    <Button
+        android:id="@+id/btn_start_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="START"
+        />
 
 </RelativeLayout>
